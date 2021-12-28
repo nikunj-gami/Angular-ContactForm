@@ -65,4 +65,8 @@ export class ContactFormComponent implements OnInit {
     this.notify.emit(this.contactForm.value as Contact);
   }
 
+  contactFormRetiveMethod(event: any) {
+    console.log(event);
+  }
+
 }

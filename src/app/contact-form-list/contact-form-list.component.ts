@@ -26,6 +26,7 @@ export class ContactFormListComponent implements OnInit {
 
   trigger(ind:any) {
     console.log(ind);
+    this.sendFormData.emit(this.childData);
   }
 
 
@@ -34,11 +35,6 @@ export class ContactFormListComponent implements OnInit {
   //   console.log(this.contactFormData);
   // }
 
-
-  // openEditModel(ind: any) {
-  //   const modalRef = this.modalService.open(ContactFormComponent, this.modalProps())
-  //   modalRef.componentInstance.dataFromParent = this.contactFormData[ind];
-  // }
 
   // modalProps() {
   //   const props: NgbModalOptions = {
